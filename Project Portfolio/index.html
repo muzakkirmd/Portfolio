@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed's Portfolio</title>
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(img1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(10, 10, 15);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(139, 139, 228);
+            font-size: 1.03rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #a6a3e3;
+            height: 1px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 180px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(111, 111, 219);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(111, 111, 219);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+
+        .image-bottom {
+            width: 140px;
+            position: relative;
+            right: -14px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: -132px;
+            right: -65px;
+        }
+
+        .image-bottom2 {
+            width: 130px;
+            position: relative;
+            right: -30px;
+        }
+
+        .vertical-title2 {
+            position: relative;
+            top: -120px;
+            right: -65px;
+        }
+
+        .image-bottom3 {
+            width: 150px;
+            position: relative;
+            right: -31px;
+        }
+
+        .vertical-title3 {
+            position: relative;
+            top: -117px;
+            right: -84px;
+        }
+
+        .image-bottom4 {
+            width: 124px;
+            position: relative;
+            right: -34px;
+            top: -7px;
+        }
+
+        .vertical-title4 {
+            position: relative;
+            top: -149px;
+            left: 70px;
+        }
+
+        .image-bottom5 {
+            width: 84px;
+            position: relative;
+            left: 55px;
+            top: 9px;
+        }
+
+        .vertical-title5 {
+            position: relative;
+            top: -118px;
+            left: 89px;
+        }
+
+        .image-bottom6 {
+            width: 104px;
+            position: relative;
+            left: 1px;
+            top: 4px;
+        }
+
+        .vertical-title6 {
+            position: relative;
+            top: -129px;
+            left: 36px;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 114vh;
+            position: relative;
+            top: 55px;
+        }
+
+        .thirdsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .thirdsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .vertical-title7 {
+            position: relative;
+            top: -149px;
+            left: 70px;
+        }
+
+        main2 hr {
+            border: 0;
+            background: #a6a3e3;
+            height: 1px;
+            margin: 60px 84px;
+        }
+
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            position: relative;
+            top: -39px;
+        }
+
+        .fourthsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .fourthsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .vertical-title8 {
+            position: relative;
+            top: -149px;
+            left: 70px;
+
+        }
+
+        main3 hr {
+            border: 0;
+            background: #a6a3e3;
+            height: 1px;
+            margin: 60px 84px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: -132px;
+            right: -65px;
+        }
+
+        .fifthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            position: relative;
+            top: -28px;
+        }
+
+        .fifthsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .vertical-title9 {
+            position: relative;
+            top: -149px;
+            left: 70px;
+
+        }
+
+        main4 hr {
+            border: 0;
+            background: #a6a3e3;
+            height: 1px;
+            margin: 60px 84px;
+            top: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mohammed's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#Contact Me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="Home">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Mohammed Muzakkir</span>
+
+                <div>and</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="mg.png.png" alt="">
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection" id="skills">
+
+            <span class="text-gray" style="position: relative;
+            top: 57px;">what i have learned</span>
+
+            <h1>Skills</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-bottom" src="html.css.png.png" alt="">
+
+                    <div class="vertical-title">
+                        HTML/CSS
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-bottom2" src="Javascript.png.png" alt="">
+
+                    <div class="vertical-title2">
+                        Javascript
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-bottom3" src="Java.png.png" alt="">
+
+                    <div class="vertical-title3">
+                        Java
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-bottom4" src="python.png.png" alt="">
+
+                    <div class="vertical-title4">
+                        Python
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-bottom5" src="c.png.png" alt="">
+
+                    <div class="vertical-title5">
+                        C
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-bottom6" src="c++.png.png" alt="">
+
+                    <div class="vertical-title6">
+                        C++
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </section>
+    </main>
+    <main2>
+        <hr>
+        <section class="thirdsection" id="Projects">
+            <span class="text-gray" style="position: relative;
+            top: 63px;">what i have Done</span>
+            <p style="position: relative;
+font-family: math; top: 70px;">Here are the projects I have completed, each showcasing different skills
+                and areas of
+                expertise. For more
+                detailed information and to explore the code, please visit my GitHub repositories linked below.</p>
+
+            <div class="container">
+                <h1 style="position: relative;
+            top: -32px;
+            font-weight: bolder;
+        ">Projects</h1>
+                <div class="project">
+                    <h3 style="position: relative;
+                    top: 48px;">project 1: [Software Testing]</h3>
+
+                    <p style="position: relative;
+                        top: 58px;">->Project Screenshout</p>
+                    <p style="position: relative;
+                        top: 64px;">-> You can see the screenshout by clicking on the "View Screenshout"</p>
+                    <p style="position: relative;
+                        top: 71px;">-> <a href="https://ibb.co/SwQMBxS" style="position: relative;
+    padding: 4px;
+    color: bisque;
+    border-radius: 15px;
+    background-color: #4d4da5;
+    font-size: smaller;
+    top: 1px;
+    font-family: auto;">View screenshout</a></p>
+
+                    <ul>
+                        <li style="position: relative;
+                        top: 81px;">Description of Project 1</li>
+                        <p style="position: relative;
+                        top: 91px;">My project was all about thoroughly testing software. I focused on:</p>
+
+                        <p style="position: relative;
+                        top: 104px;">-> Test Scenarios and Test Cases:Creating detailed plans to check how the software
+                            behaves in
+                            different situations.</p>
+                        <p style="position: relative;
+                        top: 193px;">-> UI Testing:Making sure the user interface looks good and works well on various
+                            devices and
+                            browsers.</p>
+                        <p style="position: relative;
+                            top: 100px;">-> Login Functionality:Ensuring users can log in securely and correctly.</p>
+                        <p style="position: relative;
+                        top: 119px;">->Signup Functionality:Checking that new users can sign up easily without
+                            problems.</p>
+                        <p style="position: relative;
+                        top: 169px;">->Bug Reports:Documenting any issues we find, with details on how to reproduce
+                            them, how
+                            serious they are, and suggestions for fixing them.</p>
+
+
+                    </ul>
+                    <ul>
+                        <li style="position: relative;
+                            top: 188px;
+                            font-size: large;">The below is my project Link you can view the project by
+                            clicking on it
+                        </li>
+                        <a href=https://docs.google.com/spreadsheets/d/1NQ7zace3EhLEO8bZig_swCj0JcCtSwHSet4ELW4V5rg/edit?usp=sharing
+                            style="position: relative;
+                        top: 202px; position: relative;
+    padding: 4px;
+    color: bisque;
+    border-radius: 15px;
+    background-color: #4d4da5;
+    font-size: smaller;
+    
+    font-family: auto;">View Project</a>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3 style="position: relative;
+                    top: 216px;">Project 2: [Online Shopping System]</h3>
+                    <p style="position: relative;
+                    top: 231px;">-> Project Screenshoot</p>
+                    <p style="position: relative;
+                    top: 241px;">-> You can see the screenshout by clicking on the "View Screenshout"</p>
+                    <p style="position: relative;
+                    top: 248px;"><a href="https://ibb.co/gmDj3MP" style="position: relative;
+    padding: 4px;
+    color: bisque;
+    border-radius: 15px;
+    background-color: #4d4da5;
+    font-size: smaller;
+    top: 1px;
+    font-family: auto;">View screenshout</a></p>
+
+                    <ul>
+                        <li style="position: relative;
+                        top: 265px;">Description of Project 2</li>
+                    </ul>
+                    <p style="position: relative;
+                    top: 280px;">My project was all about to develop an online shopping systme with classes</p>
+                    <p style="position: relative;
+                    top: 295px;">-> Develop an online shopping systme with classe like Product, Customer and
+                        ShoppingCart.</p>
+                    <p style="position: relative;
+                    top: 309px;">-> This project demonstrates inheritance, composition and encapsulation</p>
+                    <p style="position: relative;
+                    top: 323px;">-> This Project main Aim is to get experience in implemeenting OOP concepts in java
+                    </p>
+                    <p style="position: relative;
+                    top: 336px;">-> It is suitable for beginners to gain a solid understanding of OOP principles</p>
+                    <ul>
+                        <li style="position: relative;
+                        top: 355px;
+                        font-size: large;">
+                            The below is my GitHub Repository Link you can view the project by
+                            clicking on it</li>
+
+                        </li>
+                        <a href="https://github.com/muzakkirmd/oops" style="position: relative;
+                    top: 370px; cursor: pointer; 
+    color: bisque;
+    border-radius: 15px;
+    background-color: #4d4da5;
+    font-size: smaller;
+    font-family: auto; padding: 4px;">View Project</a>
+    
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+    </main2>
+    <main3>
+        <hr style="position: relative;
+        top:471px;">
+        <section class="fourthsection" id="About Me">
+            <div class="container" style="position: relative;
+            top: 437px;">
+                <h1 style="position: relative;
+               top: 77px; left: -8px;">About Me</h1>
+
+                <img class="image-bottom8" src="Me.png.jpg" style="position: relative;
+                width: 291px; top: 55px; right: -799px;" alt="">
+                <P style="position: relative;
+                top: -235px;
+                left: -113px;">Hi, My name is Mohammed Muzakkir Ahmed</P>
+                <p style="position: relative;
+                top: -225px;
+                left: -112px;">I am a final-year student at Chaitanya University, working hard to complete my degree.
+                </p>
+                <p style="position: relative;
+                top: -215px;
+                left: -115px;">Throughout my time here, I have engaged in both academic and extracurricular activities,
+                    gaining a well-rounded education.</p>
+                <p style="position: relative; top: -204px; left: -114px;">My studies have given me a solid
+                    foundation in my field, along with practical skills and critical thinking abilities.</p>
+                <p style="position: relative; top: -195px; left: -115px;">I've also participated in various projects
+                    and internships, which have provided valuable hands-on experience.</p>
+                <p style="position: relative; top: -187px; left: -115px;">I enjoy learning, solving problems, and
+                    working with others. I am excited about future opportunities and
+                    look forward to my chosen career.</p>
+                <p style="position: relative;
+                    top: -179px;
+                    left: -115px;"> My experience at Chaitanya University has prepared me well for the professional
+                    world.</p>
+            </div>
+
+            <a href="https://ibb.co/GFZQM2w" target="_blank" style="position: relative;
+                top: 287px;
+                left: 44px;
+                background-color: #4d4da5;
+                color: white;
+                cursor: pointer;
+                font-size: inherit;
+                padding: 4px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-family: auto;">View Resume</a>
+
+
+            <a href="https://github.com/muzakkirmd" target="_blank" style="position: relative;
+   top: 288px;
+   left: 76px;
+   background-color: #4d4da5;
+   color: white;
+   
+   font-size: inherit;
+   padding: 4px;
+   border-radius: 10px;
+   font-family: auto;">Visit GitHub</a>
+            </div>
+
+
+        </section>
+    </main3>
+
+    <main4>
+        <hr style="position: relative;">
+        <section class="fifthsection" id="Contact Me">
+            <div class="container" style="position: relative;">
+                <h1 style="position: relative;
+                top: 266px;">Contact Me</h1>
+                <ul>
+                    <li style="position: relative;
+                    top: 396px;
+                    ">Email: <a href="mailto:muzakkirmujju50@gmail.com" style="position: relative;
+    padding: 4px;
+    color: bisque;
+    border-radius: 15px;
+    background-color: #4d4da5;
+    font-size: smaller;
+    top: 1px;
+    font-family: auto;">muzakkirmujju50@gmail.com</a></li>
+                    <li style="position: relative;
+                    top: 419px;
+                    text-align: center;">LinkedIn: <a href="https://www.linkedin.com/in/mohammed-muzakkir-ahmed-4b08572b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUZC39cuDRT2zsD6HBvv%2FFw%3D%3D" style="position: relative;
+                        padding: 4px;
+                        color: bisque;
+                        border-radius: 15px;
+                        background-color: #4d4da5;
+                        font-size: smaller;
+                        top: 1px;
+                        font-family: auto;">LinkedIn</a></li>
+                    <li style="position: relative;
+                    top: 453px;">GitHub: <a href="https://github.com/muzakkirmd/my-websit" style="position: relative;
+    padding: 4px;
+    color: bisque;
+    border-radius: 15px;
+    background-color: #4d4da5;
+    font-size: smaller;
+    top: 1px;
+    font-family: auto;">GitHub</a></li>
+                    <li style="position: relative; top: 477px; text-align: center;">Instagram: <a
+                            href="https://www.instagram.com/muzakkir_ahmed8561?igsh=MWFhenRtNjExZWl5bw==" style="position: relative;
+                            padding: 4px;
+                            color: bisque;
+                            border-radius: 15px;
+                            background-color: #4d4da5;
+                            font-size: smaller;
+                            top: 1px;
+                            font-family: auto;">Instagram</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+    </main4>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['This is my Portfolio website.'],
+            typeSpeed: 50,
+        });
+
+        // Add JavaScript for smooth scrolling
+        document.getElementById('skills-button').addEventListener('click', function () {
+            const skillsSection = document.getElementById('skills');
+            skillsSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>
